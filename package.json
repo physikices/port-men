@@ -1,0 +1,25 @@
+{
+  "name": "@rodrigo/portmen",
+  "version": "1.0.0",
+  "description": "um pequeno portifolio para a disciplina de metodologia de ensino",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/physikices/monorepo.git"
+  },
+  "author": "Rodrigo Nascimento",
+  "license": "GNU GENERAL PUBLIC LICENSE v-3",
+  "bugs": {
+    "url": "https://github.com/physikices/monorepo/issues"
+  },
+  "homepage": "https://github.com/physikices/monorepo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
+}
