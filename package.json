@@ -1,0 +1,38 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Repositório para projetos e testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/physikices/monorepo.git"
+  },
+  "keywords": [],
+  "author": "Rodrigo Nascimento",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/physikices/monorepo/issues"
+  },
+  "homepage": "https://github.com/physikices/monorepo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^1.0.4",
+    "cz-conventional-changelog": "^3.0.1",
+    "husky": "^7.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
